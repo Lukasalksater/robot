@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06e6639b-38e4-43dd-ac2b-14401fcd688c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/../test.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +36,7 @@
   "keyToString": {
     "Robot Framework.Access https://robotframework.org and perform search.executor": "Run",
     "Robot Framework.Add user to promotional list.executor": "Run",
+    "Robot Framework.Create new customer.executor": "Run",
     "Robot Framework.Fill in user information.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -45,7 +50,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Robot Framework.Fill in user information">
+  <component name="RunManager" selected="Robot Framework.Create new customer">
     <configuration name="Access https://robotframework.org and perform search" type="DEMO_RUN_CONFIGURATION" factoryName="Robot Framework" temporary="true">
       <option name="INTERPRETER_OPTIONS" value=" -m robot.run  -t &quot;Access https://robotframework.org and perform search&quot;" />
       <option name="INTERPRETER_NAME" value="python" />
@@ -68,6 +73,17 @@
       <module name="" />
       <method v="2" />
     </configuration>
+    <configuration name="Create new customer" type="DEMO_RUN_CONFIGURATION" factoryName="Robot Framework" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value=" -m robot.run  -t &quot;Create new customer&quot;" />
+      <option name="INTERPRETER_NAME" value="python" />
+      <option name="textField1" value="$PROJECT_DIR$/../test.robot" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ENV_PATH" value="$PROJECT_DIR$/venv/bin" />
+      <option name="envPATH" value="$PROJECT_DIR$/venv/bin" />
+      <option name="testCaseName" value="Create new customer" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Fill in user information" type="DEMO_RUN_CONFIGURATION" factoryName="Robot Framework" temporary="true">
       <option name="INTERPRETER_OPTIONS" value=" -m robot.run  -t &quot;Fill in user information&quot;" />
       <option name="INTERPRETER_NAME" value="python" />
@@ -81,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Robot Framework.Create new customer" />
         <item itemvalue="Robot Framework.Fill in user information" />
         <item itemvalue="Robot Framework.Add user to promotional list" />
         <item itemvalue="Robot Framework.Access https://robotframework.org and perform search" />
@@ -103,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706881153876</updated>
       <workItem from="1706881162963" duration="4429000" />
-      <workItem from="1707119976203" duration="7509000" />
+      <workItem from="1707119976203" duration="8823000" />
     </task>
     <servers />
   </component>
