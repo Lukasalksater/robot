@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T11:58:01.121546" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\T440p\Desktop\test\robot\test.robot">
+<kw name="Go to https://automationplayground.com/crm/ in Chrome" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:01.355417" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-05T11:58:01.355417" elapsed="1.476761"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-05T11:58:02.833176" elapsed="0.125982"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:02.960158" level="INFO">Opening url 'https://automationplayground.com/crm/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-05T11:58:02.960158" elapsed="1.314641"/>
+</kw>
+<status status="PASS" start="2024-02-05T11:58:01.354418" elapsed="2.920381"/>
+</kw>
+<test id="s1-t1" name="Fill in user information" line="16">
+<kw name="Given User is logged in">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:04.276796" level="INFO">Clicking link '//a[@id='SignIn']'.</msg>
+<arg>//a[@id='SignIn']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:04.276796" elapsed="0.532873"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:04.809669" level="INFO">Typing text 'bosse@gmail.se' into text field '//input[@id='email-id']'.</msg>
+<arg>//input[@id='email-id']</arg>
+<arg>text=${mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:04.809669" elapsed="0.101938"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:04.911607" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg time="2024-02-05T11:58:04.946587" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:04.911607" elapsed="0.084952"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:04.997558" level="INFO">Clicking element '//button[@id='submit-id']'.</msg>
+<arg>//button[@id='submit-id']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:04.996559" elapsed="0.201044"/>
+</kw>
+<arg>${admin-mail}</arg>
+<arg>${admin-password}</arg>
+<tag>login</tag>
+<status status="PASS" start="2024-02-05T11:58:04.275796" elapsed="0.921807"/>
+</kw>
+<kw name="And User creates new customer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:05.198604" level="INFO">Clicking link '//a[@id='new-customer']'.</msg>
+<arg>//a[@id='new-customer']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:05.198604" elapsed="0.843926"/>
+</kw>
+<tag>customer-creation</tag>
+<status status="PASS" start="2024-02-05T11:58:05.198604" elapsed="0.844924"/>
+</kw>
+<kw name="When All necessary data is being submitted">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.044542" level="INFO">Typing text '1@gmail.se' into text field '//input[@id='EmailAddress']'.</msg>
+<arg>//input[@id='EmailAddress']</arg>
+<arg>text=${customer-mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.043528" elapsed="0.088949"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.132477" level="INFO">Typing text 'Jane' into text field '//input[@id='FirstName']'.</msg>
+<arg>//input[@id='FirstName']</arg>
+<arg>text=${customer-firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.132477" elapsed="0.090949"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.224425" level="INFO">Typing text 'Doe' into text field '//input[@id='LastName']'.</msg>
+<arg>//input[@id='LastName']</arg>
+<arg>text=${customer-lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.223426" elapsed="0.084953"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.309376" level="INFO">Typing text 'London' into text field '//input[@id='City']'.</msg>
+<arg>//input[@id='City']</arg>
+<arg>text=${customer-city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.309376" elapsed="0.080954"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.390330" level="INFO">Selecting options from selection list '//select[@id='StateOrRegion']' by index 1.</msg>
+<arg>//select[@id='StateOrRegion']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.390330" elapsed="0.097947"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.488277" level="INFO">Clicking element '//input[@value='female']'.</msg>
+<arg>//input[@value='female']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.488277" elapsed="0.058965"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.547242" level="INFO">Selecting checkbox '//input[@name='promos-name']'.</msg>
+<arg>//input[@name='promos-name']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.547242" elapsed="0.071982"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.619224" level="INFO">Verifying checkbox '//input[@name='promos-name']' is selected.</msg>
+<arg>//input[@name='promos-name']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.619224" elapsed="0.024986"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-05T11:58:06.644210" level="INFO">Clicking element '//button[normalize-space()='Submit']'.</msg>
+<arg>//button[normalize-space()='Submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.644210" elapsed="0.213908"/>
+</kw>
+<arg>${customer-mail1}</arg>
+<arg>${customer-firstname1}</arg>
+<arg>${customer-lastname1}</arg>
+<arg>${customer-city1}</arg>
+<tag>customer-creation</tag>
+<status status="PASS" start="2024-02-05T11:58:06.043528" elapsed="0.814590"/>
+</kw>
+<kw name="Then User has been created">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=New customer added.</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.859118" elapsed="0.050970"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2024-02-05T11:58:06.910088" elapsed="0.175145"/>
+</kw>
+<tag>customer-creation</tag>
+<status status="PASS" start="2024-02-05T11:58:06.858118" elapsed="0.227115"/>
+</kw>
+<status status="PASS" start="2024-02-05T11:58:04.275796" elapsed="2.810438"/>
+</test>
+<doc>Robot framework test + github</doc>
+<status status="PASS" start="2024-02-05T11:58:01.123549" elapsed="5.962685"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
